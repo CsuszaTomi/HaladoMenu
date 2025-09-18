@@ -1,0 +1,8 @@
+-Console.ReadKey() használata -> Egy billentyűt azonosít be(pl fel nyíl),Console.Key osztály segítí a beazonosítást
+-Switch case szerkezet -> egy érték alapján több ágú elágazást valósít meg, a switch után adjuk az értéket(pl változóban), a case után kezelünk egyes eseteket. A case ágat "break"-el le kell zárni
+-Eljárás írás -> kell név és paraméter lista de nem jelzi külön szó hogy eljárást írunk. Az eljárás neve elé a void szót írjuk jelezve hogy nincs visszatérési érték
+-Formázott kiirás(C# Tutorialba fent van a teljes anyag)
+-Tizedes érték(double) -> F betü jelzi hogy fix tizedes jegyet használunk, az F utáni szám a tizedes helyek számát jelzi 
+-Refaktorálás(refactoring) -> A kód egy részét kiszervezzük külön eljárásba vagy függvénybe, így a kód rövidebb,áttekinthetőbb, a kiszervezett rész újra felhasználható(javaslat: 7 sornál hosszab kód esetén érdemes ezt megfontolni)
+-A visual studio automatizálni tudja a refaktorálást
+-A static kulcsszó használata -> a C# OOP nyelv, az objektumok futásidőben jönnek létre. Az objektum minden tulajdonsága(változó,függvények) onnantól érhetők el hogy elindítjuk a programot és példányosítunk(LÉTREHOzunk onjektumot az osztályból). Ha az osztályban lévő változókat,függvényeket kódolási időben szeretnénk használni akkor ezt külön jeleznünk kell, erre szolgál a static
