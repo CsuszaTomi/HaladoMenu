@@ -47,17 +47,8 @@ namespace HaladóMenu
                         InputData();
                         break;
                     case 1:     //adatkiirás
-                        Console.WriteLine("***** ADATOK KIÍRÁSA *****");
-                        Console.WriteLine($"Neve: {nev}");
-                        Console.WriteLine($"Születési dátuma: {szulev}");
-                        Console.WriteLine($"Magasság: {magassag:F2} méter");
-                        if (ferfi)
-                            Console.WriteLine("Neme: Férfi");
-                        else 
-                            Console.WriteLine("Neme: Nő");
-                        Console.Write("Enterre tovább....");
-                        Console.ReadLine();
-                            break;
+                        ShowData();
+                        break;
                     case 2:     //kilepes
                         Console.Clear();
                         Console.Write("Biztosan ki szeretnél lépni?(i/n): ");
@@ -67,6 +58,21 @@ namespace HaladóMenu
                 }
             }while (currentPoint!=2);
         }
+
+        static void ShowData()
+        {
+            Console.WriteLine("***** ADATOK KIÍRÁSA *****");
+            Console.WriteLine($"Neve: {nev}");
+            Console.WriteLine($"Születési dátuma: {szulev}");
+            Console.WriteLine($"Magasság: {magassag:F2} méter");
+            if (ferfi)
+                Console.WriteLine("Neme: Férfi");
+            else
+                Console.WriteLine("Neme: Nő");
+            Console.Write("Enterre tovább....");
+            Console.ReadLine();
+        }
+
         static void InputData()
         {
             Console.Clear();
